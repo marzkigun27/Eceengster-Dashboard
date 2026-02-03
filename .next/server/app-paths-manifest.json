@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/realtime/page": "app/realtime/page.js",
+  "/history/page": "app/history/page.js",
+  "/settings/page": "app/settings/page.js"
+}

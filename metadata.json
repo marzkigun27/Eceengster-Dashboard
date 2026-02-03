@@ -1,0 +1,5 @@
+{
+  "name": "SmartBioDigester Dashboard",
+  "description": "An eco-tech real-time monitoring interface for biogas production parameters including temperature, pH, humidity, and methane concentration.",
+  "requestFramePermissions": []
+}
