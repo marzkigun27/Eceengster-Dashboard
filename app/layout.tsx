@@ -20,6 +20,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+            <head>
+                <link rel="icon" href="/assets/logo-web-eceng.ico" />
+            </head>
             <body className={`${plusJakartaSans.className} eco-pattern min-h-screen text-[#1E2A32]`}>
                 {children}
             </body>
