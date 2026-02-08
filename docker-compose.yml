@@ -9,7 +9,7 @@ services:
     container_name: smartbiodigester-dashboard
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "3002:3000"
     environment:
       - NODE_ENV=production
     networks:
