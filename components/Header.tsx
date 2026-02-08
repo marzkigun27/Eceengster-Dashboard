@@ -3,6 +3,7 @@
 import React from 'react';
 import { Bell, Search, Calendar, Moon, Sun, Menu } from 'lucide-react';
 
+
 interface HeaderProps {
   isDarkMode: boolean;
   toggleDarkMode: () => void;

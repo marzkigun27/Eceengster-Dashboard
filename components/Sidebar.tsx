@@ -3,6 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { LayoutDashboard, Activity, Database, Settings, HelpCircle, Leaf, ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
+import logo from '../public/assets/logo-tim-internal.png';
 
 interface SidebarItemProps {
   icon: any;
@@ -52,13 +54,9 @@ export const Sidebar = ({ isDarkMode, isCollapsed, onToggle, currentPath, isMobi
         {isCollapsed ? <ChevronRight size={14} /> : <ChevronLeft size={14} />}
       </button>
 
-      <div className={`flex items-center gap-3 mb-12 px-2 mt-6 transition-all ${isCollapsed ? 'lg:justify-center' : 'px-6'}`}>
-        <div className={`w-10 h-10 rounded-xl flex items-center justify-center shadow-lg transition-colors shrink-0 ${isDarkMode ? 'bg-emerald-500 shadow-emerald-500/20' : 'bg-[#1F6F5C] shadow-[#1F6F5C]/20'}`}>
-          <Leaf className={`${isDarkMode ? 'text-black' : 'text-[#F2C94C]'} w-5 h-5`} />
-        </div>
+      <div className={`flex items-center gap-3 mb-12  mt-6 transition-all ${isCollapsed ? 'lg:justify-center' : 'px-6'}`}>
         <div className={`overflow-hidden ${isCollapsed ? 'lg:hidden' : ''}`}>
-          <h2 className={`font-black leading-none tracking-tight text-lg transition-colors whitespace-nowrap ${isDarkMode ? 'text-white' : 'text-[#1E2A32]'}`}>ECOTECH</h2>
-          <span className={`text-[9px] font-black tracking-[0.25em] uppercase opacity-70 transition-colors ${isDarkMode ? 'text-emerald-400' : 'text-[#1F6F5C]'}`}>Digester</span>
+          <Image src={logo} alt="Logo" width={180} height={180} />
         </div>
       </div>
 
